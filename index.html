@@ -61,7 +61,7 @@
   }
   .ticker-track{
     display:flex; width:max-content;
-    animation: tickerScroll 50s linear infinite;
+    animation: tickerScroll 30s linear infinite;
     font-family:'Inter', sans-serif; font-weight:600; font-size:13px; letter-spacing:0.02em;
     padding-top:9px; padding-bottom:9px;
   }
@@ -742,7 +742,12 @@
      { quote: "Excellent teaching, my son's grades improved a lot.", name: "Mrs. Sharma, parent of 8th std student" }
      They will render automatically below.
   --------------------------------------------------------- */
-  const testimonials = [];
+  const testimonials = [
+    { quote: "Aditi Deshpande ma'am has an excellent teaching style. My child developed a strong interest in Sanskrit within a few months. Her explanations are clear and she ensures every concept is well understood before moving ahead. Highly recommended.", name: "Parent" },
+    { quote: "Before joining these classes, Sanskrit felt difficult and confusing. After attending Aditi ma'am's lectures, everything became simple and logical. Her notes and revision techniques are extremely helpful for exams.", name: "Student" },
+    { quote: "We are very satisfied with the progress our child has made. The teaching is structured, disciplined, and result-oriented. Ma'am pays personal attention to every student despite large batches.", name: "Parent" },
+    { quote: "Aditi ma'am makes Sanskrit interesting and easy to remember. The practice sessions and regular tests helped me improve my scores significantly. One of the best coaching experiences I've had.", name: "Student" }
+  ];
 
   if(testimonials.length){
     const container = document.getElementById('testiContainer');
